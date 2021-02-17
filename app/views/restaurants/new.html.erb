@@ -1,0 +1,13 @@
+
+
+<%= simple_form_for(@restaurant) do |r| %>
+    <%= r.input :name, placeholder: 'What is the restaurant called?' %>
+    <%= r.input :address, placeholder: 'Which state is it located in?' %>
+    <%= r.input :phone_number, placeholder: 'What is their phone number?' %>
+    <%= r.input :category, collection: Restaurant::CATEGORIES %>
+
+
+    <%= r.submit %>
+  <% end %>
+<br>
+<p> <%= link_to 'Go back', restaurants_path %> </p>

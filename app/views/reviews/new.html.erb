@@ -1,0 +1,11 @@
+
+
+<%= simple_form_for(@review) do |r| %>
+    <%= r.input :content, placeholder: 'What is the restaurant called?' %>
+    <%= r.input :rating, placeholder: 'Please input a rating between 0 - 5' %>
+
+
+    <%= r.submit %>
+  <% end %>
+<br>
+<p> <%= link_to 'Go back', restaurants_path %> </p>

@@ -1,0 +1,8 @@
+<h3>You selected:</h3>
+
+<h4> <%= @restaurant.name %> </h4>
+<p> <%= @restaurant.address  %> | <%= @restaurant.phone_number %> </p>
+
+<p> <%= link_to 'Review this page', new_restaurant_review_path(@review) %> </p>
+<p>  <%= link_to 'Back to restaurants', restaurants_path %> | <%= link_to 'Edit this restaurant', edit_restaurant_path(@restaurant) %> </p>
+

@@ -1,0 +1,9 @@
+<h3>Please see all the restaurants below:</h3>
+
+<% @restaurants.each do |restaurant| %>
+<li> <%= link_to restaurant.name, restaurant %> | <%= restaurant.address %> | <%= restaurant.phone_number %> </li>
+<% end %>
+
+<br>
+
+<p> <%= link_to 'Add a restaurant here!', new_restaurant_path %> </p>
